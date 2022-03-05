@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    delta-spark-demo:
+      build:
+        context: .
+        dockerfile: Dockerfile_delta
+      volumes:
+        - ./:/home/jovyan
+      ports:
+        - 8888-8889:8888-8889
+      container_name: delta-spark-demo
