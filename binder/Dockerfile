@@ -1,4 +1,4 @@
-FROM jupyter/all-spark-notebook:8ed745f793de
+FROM jupyter/all-spark-notebook:latest
 
 ARG DELTA_CORE_VERSION="1.1.0"
 RUN pip install --no-cache-dir delta-spark==${DELTA_CORE_VERSION} && \
