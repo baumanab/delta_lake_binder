@@ -3,7 +3,7 @@ services:
     delta-spark-demo:
       build:
         context: .
-        dockerfile: Dockerfile_delta_allSpark
+        dockerfile: Dockerfile
       volumes:
         - ./:/home/jovyan
       ports:
