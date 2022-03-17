@@ -78,8 +78,8 @@ RUN mamba install --quiet --yes \
 FROM config as startup
 
 COPY startup.sh "${HOME}"
+COPY quickstart.ipynb "${HOME}"
 
 WORKDIR "${HOME}"
-
 
 ENTRYPOINT ["bash", "startup.sh"]
