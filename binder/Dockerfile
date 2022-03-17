@@ -54,7 +54,7 @@ RUN cp -p "${SPARK_HOME}/conf/spark-defaults.conf.template" "${SPARK_HOME}/conf/
     echo 'spark.executor.extraJavaOptions -Dio.netty.tryReflectionSetAccessible=true' >> "${SPARK_HOME}/conf/spark-defaults.conf"
 
 # Configure IPython system-wide
-COPY ipython_kernel_config.py "/etc/ipython/"
+COPY ./binder/ipython_kernel_config.py "/etc/ipython/"
 RUN fix-permissions "/etc/ipython/"
 
 FROM spark as delta
@@ -77,7 +77,7 @@ RUN mamba install --quiet --yes \
 
 FROM config as startup
 
-COPY startup.sh "${HOME}"
+COPY ./binder/startup.sh "${HOME}"
 
 WORKDIR "${HOME}"
 
