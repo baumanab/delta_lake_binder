@@ -82,4 +82,4 @@ COPY ./binder/startup.sh "${HOME}"
 WORKDIR "${HOME}"
 
 
-ENTRYPOINT ["bash", "startup.sh"]
+#ENTRYPOINT ["bash", "startup.sh"]
