@@ -84,5 +84,5 @@ WORKDIR "${HOME}"
 
 
 # ENTRYPOINT ["bash", "startup.sh"]
-ENTRYPOINT []
-# EXPOSE 8889:8889
+
+EXPOSE 8889:8889
