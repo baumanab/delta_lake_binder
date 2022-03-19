@@ -83,4 +83,4 @@ COPY ./binder/quickstart_binder.ipynb "${HOME}"
 WORKDIR "${HOME}"
 
 
-ENTRYPOINT ["bash", "startup.sh"]
+# ENTRYPOINT ["bash", "startup.sh"]
