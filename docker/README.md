@@ -16,12 +16,12 @@ docker build -t jupsparkexp -f Dockerfile_jupsparkexp .
 ### Run
 
 ```bash
-docker run --rm -p 8888-8889:8888:8889 jupsparkexp 
+docker run -d --rm -p 8888-8889:8888-8889 jupsparkexp 
 ```
 
 ### Exec into a shell
 ```bash
-docker exec -it <first 4 containerid> bin/bash
+docker exec -it <first 4 containerid> bash
 ```
 
 ### Viewing Logs
