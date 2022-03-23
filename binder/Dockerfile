@@ -78,7 +78,7 @@ RUN mamba install --quiet --yes \
 FROM config as startup
 
 COPY ./binder/startup.sh "${HOME}"
-COPY ./binder/quickstart_binder.ipynb "${HOME}"
+COPY ./binder/quickstart_binder.ipynb "${HOME}/work"
 
 WORKDIR "${HOME}"
 
